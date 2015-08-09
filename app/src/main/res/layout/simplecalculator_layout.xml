@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etfirstnumber"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btcalculator1"
+        android:layout_alignEnd="@+id/btcalculator1" />
+
+    <EditText
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etsecondnumber"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/etfirstnumber"
+        android:layout_alignRight="@+id/etfirstnumber"
+        android:layout_alignEnd="@+id/etfirstnumber"
+        android:layout_alignLeft="@+id/etfirstnumber"
+        android:layout_alignStart="@+id/etfirstnumber" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/btcalculator"
+        android:layout_below="@+id/etfirstnumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Substract"
+        android:id="@+id/btcalculator1"
+        android:layout_alignTop="@+id/btcalculator"
+        android:layout_toRightOf="@+id/btcalculator"
+        android:layout_toEndOf="@+id/btcalculator" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiply"
+        android:id="@+id/btcalculator2"
+        android:layout_alignTop="@+id/btcalculator1"
+        android:layout_toRightOf="@+id/etsecondnumber"
+        android:layout_toEndOf="@+id/etsecondnumber" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divide"
+        android:id="@+id/btcalculator3"
+        android:layout_alignTop="@+id/btcalculator1"
+        android:layout_toRightOf="@+id/btcalculator2"
+        android:layout_toEndOf="@+id/btcalculator2" />
+
+</RelativeLayout>

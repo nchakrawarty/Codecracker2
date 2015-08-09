@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.felight.cc.test.AlgorithamBenchMarkerActivity"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/etArraySize"
+                android:layout_gravity="center_horizontal"
+                android:hint="Enter Array Size" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioGroup
+                    android:id="@+id/rgCase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Best Case"
+                        android:id="@+id/rbBestCase"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average Case"
+                        android:id="@+id/rbAverageCase"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Worst Case"
+                        android:id="@+id/rbWorstCase"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false" />
+
+                </RadioGroup>
+            </TableLayout>
+
+            <Button
+                android:onClick="doCalculation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GenerateArray"
+                android:id="@+id/btnGenerateArray"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Click Generate Array To Generate Array"
+                android:id="@+id/tvstatus"
+                android:layout_gravity="center_horizontal" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+
+                <TableRow
+                    android:id="@+id/tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/tvHeaderAlgos"
+                        android:text="Choose Algos"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/tvHeaderResult"
+                        android:text="Time Taken"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+
+                    <Button
+                        android:onClick="doCalculation"
+                        android:id="@+id/btnBubbleSort"
+                        android:text="BubbleSort"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/tvBubbleSortResult"
+                        android:text="Result"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+
+                    <Button
+                        android:id="@+id/btnSelectionSort"
+                        android:text="SelectionSort"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/tvSelectionSortResult"
+                        android:text="Result"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

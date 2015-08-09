@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_gravity="right" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal">
+                <TableRow>
+                    <Button
+                        android:id="@+id/btm1"
+                        android:onClick="navigate"
+                        android:background="@drawable/p"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+
+                        android:gravity="center_vertical|center_horizontal"
+
+                        android:text="Greeting App"
+                        android:textColor="#ffffff" />
+                    <Button
+                        android:id="@+id/btm2"
+                        android:onClick="navigate"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="192dp"
+                        android:layout_height="160dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/p"
+                        android:text="Calculater App"
+                        android:textColor="#ffffff" />
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/btm3"
+                        android:onClick="navigate"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/p"
+                        android:text="Motivation App"
+                        android:textColor="#ffffff" />
+                    <Button
+                        android:id="@+id/btm4"
+                        android:onClick="navigate"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="192dp"
+                        android:layout_height="160dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/p"
+                        android:text="..."
+                        android:textColor="#ffffff" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <Button
+                        android:id="@+id/btm5"
+                        android:onClick="navigate"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="365dp"
+                        android:layout_height="160dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/p"
+                        android:text="Sorting App"
+                        android:textColor="#ffffff" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/p"
+                        android:text="ABC"
+                        android:textColor="#819681" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/p"
+                        android:text="ABC"
+                        android:textColor="#819681" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/p"
+                        android:text="ABC"
+                        android:textColor="#819681" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
